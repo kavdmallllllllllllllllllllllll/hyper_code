@@ -1,0 +1,78 @@
+{% extends 'header.html' %}
+
+
+{% block body %}
+{% load static %}
+
+<section id="contact" class="contact">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>تواصل معنا</h2>
+        <p>يسعدنا تواصلك معنا سوف نتصل بك في اسرع وقت</p>
+      </div>
+
+      <div class="row">
+
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-lg-6 info">
+              <i class="bx bx-map"></i>
+              <h4>العنوان</h4>
+              <p>مصر<br>القاهرة</p>
+            </div>
+            <div class="col-lg-6 info">
+              <i class="bx bx-phone"></i>
+              <h4>اتصل بنا</h4>
+              <p>+0201123434197<br></p>
+            </div>
+            <div class="col-lg-6 info">
+              <i class="bx bx-envelope"></i>
+              <h4>Email Us</h4>
+              <p>contact@example.com<br>info@example.com</p>
+            </div>
+            <div class="col-lg-6 info">
+              <i class="bx bx-time-five"></i>
+              <h4>Working Hours</h4>
+              <p>Mon - Fri: 9AM to 5PM<br>Sunday: 9AM to 1PM</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <form action="forms/contact.php" method="post" role="form" class="php-email-form" data-aos="fade-up">
+            <div class="form-group">
+              <input placeholder="ادخل الاسم " type="text" name="name" class="form-control" id="name" required>
+            </div>
+            <div class="form-group mt-3">
+              <input placeholder="الاميل الخاص بك " type="email" class="form-control" name="email" id="email" required>
+            </div>
+            <div class="form-group mt-3">
+              <input placeholder=" رقم الجوال" type="text" class="form-control" name="subject" id="subject" required>
+            </div>
+            <div class="form-group mt-3">
+              <textarea placeholder="رسالتك" class="form-control" name="message" rows="5" required></textarea>
+            </div>
+            <div class="my-3">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+            </div>
+            <div class="text-center"><button type="submit">Send Message</button></div>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Contact Section -->
+
+
+
+
+
+
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+{% endblock body %}
