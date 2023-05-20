@@ -9,29 +9,34 @@
 
     <div style="text-align: center;" class="container">
       <div class="row">
-        <div style="width: 30%; margin-left: 15%;" class="login">
+        <div style="width: 75%;" class="login">
           <div style="text-align: center;"  class="mb-3">
 
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">اسم المتخدم </label>
-            <input type="username" class="form-control" id="exampleFormControlInput1" placeholder=" اسم المستخدم" >
-          </div>
-          <div class="mb-3">
-          <div class="form-floating">
-            <input type="password" class="form-control" id="floatingPassword" placeholder="الرقم السري الاول">
-            <label for="floatingPassword">Password</label>
-          </div>
-          <br>
-      
-          <div class="form-floating">
-            <input type="password" class="form-control" id="floatingPassword" placeholder="كرر الرقم السري">
-            <label for="floatingPassword">Password</label>
-          </div>
-          <br>
-          <div class="d-grid gap-2">
-            <button class="btn btn-primary" type="button">سجل الان</button>
-          </div>
-        
+
+          <form   action="{% url 'login' %}" method="post">
+
+          
+
+            {% csrf_token %}
+
+            
+            <div class="mb-3">
+
+              <label for="exampleFormControlInput1" class="form-label">اسم المتخدم </label>
+              <input type="username" name="username" class="form-control" id="exampleFormControlInput1" placeholder=" اسم المستخدم" >
+            </div>
+            <div class="mb-3">
+            <div class="form-floating">
+              <input type="password" class="form-control" name="password" id="floatingPassword" placeholder="الرقم السري ">
+              <label for="floatingPassword">Password</label>
+            </div>
+            <div class="d-grid gap-2">
+              <button style="text-align: center;" type="submit" class="btn btn-outline-info">تسجيل الدخول  </button>
+            </div>
+
+
+          </form>
+
 
 
           
@@ -60,5 +65,4 @@
 
 
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 {% endblock body %}
