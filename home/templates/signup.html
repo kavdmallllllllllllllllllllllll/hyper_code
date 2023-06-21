@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+
+
+{% block body %}
+{% load static %}
+
+
+  <section id="hero" class="d-flex align-items-center">
+
+    <div style="text-align: center;" class="container">
+      <div class="row">
+        <div style="width: 80%;margin-left: 10%;" class="login">
+          {% if form.error %}
+            <h1>!!!!! </h1>
+          {% endif %}
+          <form method="POST" novalidate>
+            {% csrf_token %}
+            <h2>Sign Up</h2>
+              
+            {% for field in form %}
+            <p>
+              {% if field.errors %}
+              <ul class="errorlist">
+                {% for error in field.errors %}
+                <li>{{ error }}</li>
+                {% endfor %}
+              </ul>
+              {% endif %}
+               {{ field.label_tag }} {{ field }}
+            </p>
+            {% endfor %}
+            <br>
+            <div class="d-grid gap-2">
+              <button style="text-align: center;" type="submit" class="btn btn-outline-info">تسجيل   </button>
+            </div>
+          </form>
+
+        
+
+
+          
+      
+        </div>
+
+
+
+
+        <div style="margin-top: 120px;" class="container">
+          <div  class="d-grid gap-2">
+            <a style="text-align: center;"  class="btn btn-outline-info" href="{% url 'login' %}">لديك حساب بالفعل</a>
+          </div>
+        </div>
+     
+    
+      </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  
+    </div>
+  
+
+  </section><!-- End Hero -->
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+  </form>
+
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+{% endblock body %}

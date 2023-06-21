@@ -1,4 +1,4 @@
-{% extends 'header.html' %}
+{% extends 'base.html' %}
 
 
 {% block body %}
@@ -9,39 +9,37 @@
 
     <div style="text-align: center;" class="container">
       <div class="row">
-        <div style="width: 80%;margin-left: 10%;" class="login">
+        <div style="width: 75%;" class="login">
           <div style="text-align: center;"  class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label"> الاسم</label>
-            <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="ادخل الاسم">
-          </div>
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label"> رقم الهاتف</label>
-            <input type="phon" class="form-control" id="exampleFormControlInput1" placeholder="رقم الهاتف">
-          </div>
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label"> الاميل</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-          </div>
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">اسم المتخدم </label>
-            <input type="username" class="form-control" id="exampleFormControlInput1" placeholder=" اسم المستخدم" >
-          </div>
-          <div class="mb-3">
-          <div class="form-floating">
-            <input type="password" class="form-control" id="floatingPassword" placeholder="الرقم السري الاول">
-            <label for="floatingPassword">Password</label>
-          </div>
-          <br>
-      
-          <div class="form-floating">
-            <input type="password" class="form-control" id="floatingPassword" placeholder="كرر الرقم السري">
-            <label for="floatingPassword">Password</label>
-          </div>
-          <br>
-          <div class="d-grid gap-2">
-            <button class="btn btn-primary" type="button">سجل الان</button>
-          </div>
-        
+            
+
+
+            <form   action="{% url 'login' %}" method="POST">
+
+            
+
+              {% csrf_token %}
+
+              
+              <div class="mb-3">
+
+                <label for="exampleFormControlInput1" class="form-label">اسم المتخدم </label>
+                <input type="username" name="username" class="form-control"  placeholder=" اسم المستخدم" >
+              </div>
+              <div class="mb-3">
+              <div class="form-floating">
+                <input type="password" class="form-control" name="password"  placeholder="الرقم السري ">
+                <label for="floatingPassword">Password</label>
+              </div>
+              <br>
+              <br>
+              <div class="d-grid gap-2">
+                <button style="text-align: center;" type="submit" class="btn btn-outline-info">تسجيل الدخول  </button>
+              </div>
+
+
+            </form>
+
 
 
           
@@ -55,10 +53,6 @@
       </div>
     </div>
 
-  
-    </div>
-  
-
   </section><!-- End Hero -->
 
 
@@ -66,12 +60,6 @@
 
 
 
-  <div class="container">
-    <div  class="d-grid gap-2">
-      <a class="btn btn-primary" href="{% url 'singup' %}">لديك حساب بالفعل</a>
-    </div>
-
-  </div>
 
 
 
@@ -80,5 +68,4 @@
 
 
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 {% endblock body %}

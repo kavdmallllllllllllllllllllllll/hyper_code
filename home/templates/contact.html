@@ -1,5 +1,4 @@
-{% extends 'header.html' %}
-
+{% extends 'base.html' %}
 
 {% block body %}
 {% load static %}
@@ -29,18 +28,20 @@
             <div class="col-lg-6 info">
               <i class="bx bx-envelope"></i>
               <h4>Email Us</h4>
-              <p>contact@example.com<br>info@example.com</p>
+              <p>kamal.ahmed490.ka83@gmail.com<br></p>
             </div>
             <div class="col-lg-6 info">
               <i class="bx bx-time-five"></i>
-              <h4>Working Hours</h4>
-              <p>Mon - Fri: 9AM to 5PM<br>Sunday: 9AM to 1PM</p>
+              <h4>نعمل علي مدار الاسبوع</h4>
             </div>
           </div>
         </div>
 
         <div class="col-lg-6">
-          <form action="forms/contact.php" method="post" role="form" class="php-email-form" data-aos="fade-up">
+
+          <form action="{% url 'contact' %}" method="post"  >
+            {% csrf_token %}
+
             <div class="form-group">
               <input placeholder="ادخل الاسم " type="text" name="name" class="form-control" id="name" required>
             </div>
@@ -48,18 +49,30 @@
               <input placeholder="الاميل الخاص بك " type="email" class="form-control" name="email" id="email" required>
             </div>
             <div class="form-group mt-3">
-              <input placeholder=" رقم الجوال" type="text" class="form-control" name="subject" id="subject" required>
+              <input placeholder=" رقم الجوال" type="text" class="form-control" name="phon" id="subject" required>
             </div>
             <div class="form-group mt-3">
-              <textarea placeholder="رسالتك" class="form-control" name="message" rows="5" required></textarea>
+              <textarea placeholder="رسالتك" class="form-control" name="massge" rows="5" required></textarea>
+            </div>
+            <br>
+            <div class="text-center"><button style="width: 100%;" type="submit" class="btn btn-outline-info">ارسل الان</button></div>
+
+
+
+
             </div>
             <div class="my-3">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
+              <div class="sent-message">
+                {% if messages %}
+                {% for messages in messages %}
+                   <div style="text-align: center;" class="alert alert-danger" role="alert">
+                      {{messages}}
+                   </div>
+      
+                {% endfor %}
+             {% endif %}
+              </div>
             </div>
-            <div class="text-center"><button type="submit">Send Message</button></div>
-          </form>
         </div>
 
       </div>

@@ -1,15 +1,28 @@
-{% extends 'header.html' %}
+{% extends 'base.html' %}
 
 
 {% block body %}
 {% load static %}
 
+
+
+<!--   <video autoplay muted loop id="myVideo">
+    <source style="position: fixed;" src="{% static '3.mp4' %}" type="video/mp4">
+  </video> -->
+
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
+  <section style=""  id="hero"  class="d-flex align-items-center">
+
+
+
 
     <div class="container">
+
+
       <div class="row">
-        <div class="col-lg-6 d-lg-flex flex-lg-column justify-content-center align-items-stretch pt-5 pt-lg-0 order-2 order-lg-1" data-aos="fade-up">
+
+
+        <div  class="col-lg-6 d-lg-flex flex-lg-column justify-content-center align-items-stretch pt-5 pt-lg-0 order-2 order-lg-1" data-aos="fade-up">
           <div>
             <h1>اهلا بك في شركة هايبر كود</h1>
             <h2>شركة مصرية مميزة تعمل فى مجال تصميم المواقع وانتاج البرمجيات  وتمتلك مكانة مميزة فى السوق المصرى  تمتلك الشركة فريق عمل مميز متخصص فى تصميم وتطوير المواقع الالكترونية لدينا خبرة طويلة فى هذا المجال منذ اكثر من 10 اعوام</h2>
@@ -17,15 +30,16 @@
             <a href="#" class="download-btn"> تواصل </a>
           </div>
         </div>
-        <div class="col-lg-6 d-lg-flex flex-lg-column align-items-stretch order-1 order-lg-2 hero-img" data-aos="fade-up">
+        <div  class="col-lg-6 d-lg-flex flex-lg-column align-items-stretch order-1 order-lg-2 hero-img" data-aos="fade-up">
           <img src="{% static 'assets/img/s/hero-img.png'%}" class="img-fluid" alt="">
+          
         </div>
       </div>
     </div>
 
   </section><!-- End Hero -->
 
-  <main id="main">
+  <main  id="main">
 
     <!-- ======= App Features Section ======= -->
     <section id="features" class="features">ٍ
@@ -83,8 +97,11 @@
       </div>
     </section><!-- End App Features Section -->
 
+
+
+
     <!-- ======= Details Section ======= -->
-    <section id="details" class="details">
+    <section  id="details" class="details">
       <div class="container">
 
         <div class="row content">
@@ -111,6 +128,8 @@
             </p>
           </div>
         </div>
+
+
 
         <div class="row content">
           <div class="col-md-4 order-1 order-md-2" data-aos="fade-left">
@@ -140,15 +159,15 @@
             </h3>
             <p> يعني أن تحسين ضهور موقعك في محركات البحث يمكن أن يساعدك بشكل كبير في جلب الزوار إلى موقعك الخاص بك والحصول على مراتب أعلى</p>
             <ul>
-              <li><i class="bi bi-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              <li><i class="bi bi-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-              <li><i class="bi bi-check"></i> Facilis ut et voluptatem aperiam. Autem soluta ad fugiat.</li>
+              <li><i class="bi bi-check"></i>  تحسين موقعك طبقا لمتطلبات محركات البحث</li>
+              <li><i class="bi bi-check"></i> زيادة عدد زيارات الموقع الإلكتروني كفيل ببناء قاعدة متابعين لنشاطك التجاري</li>
+              <li><i class="bi bi-check"></i> تتم هذة العملية عن طريق مايسمى ب عناكب البحث المسؤلة عن الزحف وتتبع الروابط بين صفحات المواقع</li>
             </ul>
             <p>
-              Qui consequatur temporibus. Enim et corporis sit sunt harum praesentium suscipit ut voluptatem. Et nihil magni debitis consequatur est.
+               هو عملية تطوير المواقع لتناسب متطلبات محركات البحث المختلفة مثل Google  أو Bing بهدف الظهور في نتائج البحث الأولى للكلمات والمصطلحات الرئيسية المستخدمة من العملاء المحتملين للشركات والمشروعات والأنشطة التجارية.
             </p>
             <p>
-              Suscipit enim et. Ut optio esse quidem quam reiciendis esse odit excepturi. Vel dolores rerum soluta explicabo vel fugiat eum non.
+              محركات البحث هي مصدر 70% من زيارات المواقع الإلكترونية حيث يقوم زوار المواقع باللجوء إلى محركات البحث المختلفة للإجابة على أسئلة معينة أو البحث عن منتج أو خدمة مع وجود مئات الموضوعات المنشورة للإجابة عن أسئلة الزوار وتواجد مواقع إلكترونية لمعظم الشركات والمشروعات التجارية التي توفر بدائل متعددة
             </p>
           </div>
         </div>
@@ -158,20 +177,32 @@
             <img src="{% static 'assets/img/details-4.png'%}" class="img-fluid" alt="">
           </div>
           <div class="col-md-8 pt-5 order-2 order-md-1" data-aos="fade-up">
-            <h3>Quas et necessitatibus eaque impedit ipsum animi consequatur incidunt in</h3>
+            <h3>مراحل العمل </h3>
             <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+              تحديد فكرة الموقع والهدف منه
             </p>
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum
-            </p>
+
+
+
+
+  
             <ul>
-              <li><i class="bi bi-check"></i> Et praesentium laboriosam architecto nam .</li>
-              <li><i class="bi bi-check"></i> Eius et voluptate. Enim earum tempore aliquid. Nobis et sunt consequatur. Aut repellat in numquam velit quo dignissimos et.</li>
-              <li><i class="bi bi-check"></i> Facilis ut et voluptatem aperiam. Autem soluta ad fugiat.</li>
+              <p><i class="bi bi-check"></i>رسم تخيل للمواقع ووظائفة </p>
+              <p><i class="bi bi-check"></i>بداء تصميم وجه الموقع</p>
+              <p><i class="bi bi-check"></i>تصميم الباك اند الخاص به</p>
+  
+              <p><i class="bi bi-check"></i>مراجعه شاملة للموقع والتاكد من عمل الوظائف بشكل صحيح</p>
+              <p><i class="bi bi-check"></i>رفع الموقع علي السيرفير الخاص به 
+  
+              </p>
+              <p><i class="bi bi-check"></i>اختبار سرعه وامان السيرفير 
+  
+              </p>
+              <p><i class="bi bi-check"></i>تسليم السيت للعميل وربط الدمين الخاص به
+  
+              </p>
+              <li><i class="bi bi-check"></i> عند الانتهاء يتم ارسال ملفات الموقع للعميل بشكل كامل </li>
+       
             </ul>
           </div>
         </div>
@@ -184,164 +215,97 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>الالبوم</h2>
+          <h2>اعملنا</h2>
           <p>بعض  من اعملنا</p>
         </div>
 
       </div>
 
+
+
+
+
+
       <div class="container-fluid" data-aos="fade-up">
-        <div class="gallery-slider swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide"><a href="{% static 'assets/img/gallery/gallery-1.png'%}" class="gallery-lightbox" data-gall="gallery-carousel"><img src="{% static 'assets/img/gallery/gallery-1.png'%}" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a href="{% static 'assets/img/gallery/gallery-2.png'%}" class="gallery-lightbox" data-gall="gallery-carousel"><img src="{% static 'assets/img/gallery/gallery-2.png'%}" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a href="{% static 'assets/img/gallery/gallery-3.png'%}" class="gallery-lightbox" data-gall="gallery-carousel"><img src="{% static 'assets/img/gallery/gallery-3.png'%}" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a href="{% static 'assets/img/gallery/gallery-4.png'%}" class="gallery-lightbox" data-gall="gallery-carousel"><img src="{% static 'assets/img/gallery/gallery-4.png'%}" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a href="{% static 'assets/img/gallery/gallery-5.png'%}" class="gallery-lightbox" data-gall="gallery-carousel"><img src="{% static 'assets/img/gallery/gallery-5.png'%}" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a href="{% static 'assets/img/gallery/gallery-6.png'%}" class="gallery-lightbox" data-gall="gallery-carousel"><img src="{% static 'assets/img/gallery/gallery-6.png'%}" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a href="{% static 'assets/img/gallery/gallery-7.png'%}" class="gallery-lightbox" data-gall="gallery-carousel"><img src="{% static 'assets/img/gallery/gallery-7.png'%}" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a href="{% static 'assets/img/gallery/gallery-8.png'%}" class="gallery-lightbox" data-gall="gallery-carousel"><img src="{% static 'assets/img/gallery/gallery-8.png'%}" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a href="{% static 'assets/img/gallery/gallery-9.png'%}" class="gallery-lightbox" data-gall="gallery-carousel"><img src="{% static 'assets/img/gallery/gallery-9.png'%}" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a href="{% static 'assets/img/gallery/gallery-10.png'%}" class="gallery-lightbox" data-gall="gallery-carousel"><img src="{% static 'assets/img/gallery/gallery-10.png'%}" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a href="{% static 'assets/img/gallery/gallery-11.png'%}" class="gallery-lightbox" data-gall="gallery-carousel"><img src="{% static 'assets/img/gallery/gallery-11.png'%}" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a href="{% static 'assets/img/gallery/gallery-12.png'%}" class="gallery-lightbox" data-gall="gallery-carousel"><img src="{% static 'assets/img/gallery/gallery-12.png'%}" class="img-fluid" alt=""></a></div>
-          </div>
-          <div class="swiper-pagination"></div>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            {% for images in images %}
+
+            <div class="carousel-item active">
+              <img src="{{ images.image.url }}" class="d-block w-100" alt="...">
+            </div>
+            {% endfor %}
+
+
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">السابق</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">التالي</span>
+          </button>
         </div>
 
+
       </div>
-    </section><!-- End Gallery Section -->
+    </section>
+    
+    
+    <!-- End Gallery Section -->
 
     <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Testimonials</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="{% static 'assets/img/testimonials/testimonials-1.jpg'%}" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="{% static 'assets/img/testimonials/testimonials-2.jpg'%}" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="{% static 'assets/img/testimonials/testimonials-3.jpg'%}" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="{% static 'assets/img/testimonials/testimonials-4.jpg'%}" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="{% static 'assets/img/testimonials/testimonials-5.jpg'%}" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div>
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-    </section><!-- End Testimonials Section -->
 
     <!-- ======= Pricing Section ======= -->
     <section id="pricing" class="pricing">
       <div class="container">
 
         <div class="section-title">
-          <h2>Pricing</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2>الاسعار</h2>
+          <p>يعتمد سعر الموقع علي التقنيات المضافه اليه يمكنك مناقشه فكرة مشروعك معنا وسنخبرك بتكلفه الكامله</p>
+          <p>اسئل علي خصم 40% لي العملاء الجدد  لا تنسي العرض</p>
         </div>
 
         <div class="row no-gutters">
 
           <div class="col-lg-4 box" data-aos="fade-right">
-            <h3>Free</h3>
+            <h3>مجانا</h3>
             <h4>$0<span>per month</span></h4>
             <ul>
-              <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
-              <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
-              <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
-              <li class="na"><i class="bx bx-x"></i> <span>Pharetra massa massa ultricies</span></li>
-              <li class="na"><i class="bx bx-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+              <li><i class="bx bx-check"></i>دعم فني يشمل الاستشارات والشرح وغيرها</li>
+              <li><i class="bx bx-check"></i> تحديثات في الشكل تشمل تعديلات في معلمات الموقع الاساسيه   </li>
+              <li><i class="bx bx-check"></i>  تحديثات في الشكل تشمل تحديثات الالوان وغيرها</li>
+
+              <li><i class="bx bx-check"></i>دعم تقني  تجهيز السيرفير وربطه بالدومين مجانا</li>
+              <li class="na"><i class="bx bx-x"></i> <span>حمله اعلانية موسعه لي الموقع</span></li>
+              <li class="na"><i class="bx bx-x"></i> <span>حمله سوشل ميدا خاصة بالموقع</span></li>
             </ul>
             <a href="#" class="get-started-btn">Get Started</a>
           </div>
 
           <div class="col-lg-4 box featured" data-aos="fade-up">
-            <h3>Business</h3>
-            <h4>$29<span>per month</span></h4>
+            <h3>موقع كامل</h3>
+            <h4>$150<span>all</span></h4>
             <ul>
-              <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
-              <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
-              <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
-              <li><i class="bx bx-check"></i> Pharetra massa massa ultricies</li>
-              <li><i class="bx bx-check"></i> Massa ultricies mi quis hendrerit</li>
+              <li><i class="bx bx-check"></i> موقع كامل</li>
+              <li><i class="bx bx-check"></i> لوحة تحكم</li>
+              <li><i class="bx bx-check"></i>تسليم اكواد</li>
+              <li><i class="bx bx-check"></i> سيرفير مجاني</li>
+              <li><i class="bx bx-check"></i>دومين خاص بك</li>
             </ul>
             <a href="#" class="get-started-btn">Get Started</a>
           </div>
 
           <div class="col-lg-4 box" data-aos="fade-left">
-            <h3>Developer</h3>
-            <h4>$49<span>per month</span></h4>
+            <h3>موقع متيمز</h3>
+            <h4>$200<span>premium sit</span></h4>
             <ul>
-              <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
-              <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
-              <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
-              <li><i class="bx bx-check"></i> Pharetra massa massa ultricies</li>
-              <li><i class="bx bx-check"></i> Massa ultricies mi quis hendrerit</li>
+              <li><i class="bx bx-check"></i>  موقع برميم</li>
+              <li><i class="bx bx-check"></i> تعليلات برميم  دائما</li>
+              <li><i class="bx bx-check"></i>سيرفير ودومين مجاني </li>
+              <li><i class="bx bx-check"></i> وجهه متميزة للغاية</li>
+           
             </ul>
             <a href="#" class="get-started-btn">Get Started</a>
           </div>
@@ -357,54 +321,55 @@
 
         <div class="section-title">
 
-          <h2>Frequently Asked Questions</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2>بعض اسئله العملاء</h2>
+          <p>بعض الاسئله الشائعه واجابتها</p>
         </div>
 
         <div class="accordion-list">
           <ul>
             <li data-aos="fade-up">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1">Non consectetur a erat nam at lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1">كيف يمكنني ان ادفع ؟<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
                 <p>
-                  Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                  يمكنك الدفع بوسطة بيبال او تحويلات  بنكيه او محفظة الاكترونيه
                 </p>
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="100">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed">Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed">هل يجب دفع المبلغ كامل اول مرة ؟<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
                 <p>
-                  Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                  ليس شرطا يمكنك تقسيم المبلغ لي جزائين عند البداء وبعد تسلم المشروع او يمكنك التقسيم لي عدت اجزاء حسب حجم المشروع ومتطلباتوا
                 </p>
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="200">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed">Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed">هل يمكنني استرجاع الاموال في حاله لم  اجد الخدمه مناسبة ؟ <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
                 <p>
-                  Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                  نعم يمكنك استرجاع اموالك في حاله ان كانت الخدمه لا تتوافق التقنيات مع احتيجاتك
                 </p>
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="300">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#accordion-list-4" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#accordion-list-4" class="collapsed">هل يجب ان يكون السيرفير  والدومين خاص بكم فقط ؟<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="accordion-list-4" class="collapse" data-bs-parent=".accordion-list">
                 <p>
-                  Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.
+                  لا يمكنك اختيار اي سيرفير ترغب به من اي شركة وكذالك الدومين الخاص بك
                 </p>
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="400">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#accordion-list-5" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#accordion-list-5" class="collapsed">ما هوا الدومين وما وظيفة السيرفير ؟<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="accordion-list-5" class="collapse" data-bs-parent=".accordion-list">
                 <p>
-                  Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
+                  الدومين هوا الينك الخاص بموقعك  والذي يوجه المستخدم الي موقعك حاله الضغط عليه ويجب ان يكون الاسم متوافق مع اسم موقعك الخاص 
                 </p>
+                <p>اما عن السيرفير فهوا الملفات الخاصه بالويب سيت الخاص بك والتي يجب ان تعمل طوال العام بدون انقطاع لذلك يتم رفعها علي سيرفير خاص بك</p>
               </div>
             </li>
 
