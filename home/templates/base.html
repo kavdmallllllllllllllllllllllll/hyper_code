@@ -1,7 +1,6 @@
 {% load static %}
 
 
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,18 +13,18 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="{% static 'assets/img/favicon.png '%}" rel="icon">
-  <link href="{% static 'assets/img/apple-touch-icon.png '%}" rel="apple-touch-icon">
+  <link href="{% static 'assets/img/favicon.png'%}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png'%}" rel="apple-touch-icon">
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-  <!-- Vendor CSS Files --> 
-  <link href="{% static 'assets/vendor/aos/aos.css '%}" rel="stylesheet">
-  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css '%}" rel="stylesheet">
-  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css '%}" rel="stylesheet">
-  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css '%}" rel="stylesheet">
-  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css '%}" rel="stylesheet">
-  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css '%}" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/aos/aos.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css'%}" rel="stylesheet">
 
   <link href="{% static 'assets/css/style.css'%}" rel="stylesheet">
 
@@ -35,7 +34,7 @@
 <body style="text-align: right;">
 
   <!-- ======= Header ======= -->
-  <header style="background-color: #f2f5fa; text-align: right;	box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.4);	-webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.4);
+  <header style="background-color: #f2f5fa;	box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.4);	-webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.4);
 
 
 
@@ -49,7 +48,7 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="{% url 'home' %}">الرئسية</a></li>
+          <li><a class="nav-link scrollto active" href="{% url 'home'%}">الرئسية</a></li>
           <li><a class="nav-link scrollto" href="#features">عن الشركة </a></li>
           <li><a class="nav-link scrollto" href="#gallery">اعمالنا</a></li>
           <li><a class="nav-link scrollto" href="{% url 'contact' %}">اتصل بنا</a></li>
@@ -59,11 +58,11 @@
           {% if user.is_authenticated %}
             <li><a class="getstarted scrollto" href="{% url 'login_out' %}">خروج</a></li>
 
-   
+
           {% else %}
             <li><a class="getstarted scrollto" href="{% url 'singup' %}">تسجيل</a></li>
           {% endif %}
-        
+
 
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -97,7 +96,7 @@
             <form action="" method="post">
               <input type="email" name="email"><input type="submit" value="Subscribe">
             </form>
-            
+
           </div>
         </div>
       </div>
@@ -126,19 +125,21 @@
     </div>
 
 
+
+
+
   </footer><!-- End Footer -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Vendor JS Files -->
-  <script src="{% static 'assets/vendor/aos/aos.js '%}"></script>
-  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js '%}"></script>
-  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js '%}"></script>
-  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js '%}"></script>
-  <script src="{% static 'assets/vendor/php-email-form/validate.js '%}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js'%}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js'%}"></script>
 
   <!-- Template Main JS File -->
-  <script src="{% static 'assets/js/main.js '%}"></script>
+  <script src="{% static 'assets/js/main.js'%}"></script>
 
 </body>
 
